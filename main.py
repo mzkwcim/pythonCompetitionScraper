@@ -7,6 +7,9 @@ from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Border, Side
 
+with open('config.json', 'r', encoding='utf-8') as f:
+    config = json.load(f)
+
 def col_letter_to_index(col_letter):
     result = 0
     for char in col_letter:
@@ -29,63 +32,26 @@ def translate_age_to_category(age):
             return "Senior"
         
 def translate_stroke(distance):
-    stroke = distance.split(" ")[-1]
-    length = distance.split(" ")[0]
-    match stroke:
-        case "Freestyle":
-            return f"{length} stylem dowolnym"
-        case "Backstroke":
-            return f"{length} stylem grzbietowym"
-        case "Medley":
-            return f"{length} stylem zmiennym"
-        case "Butterfly":
-            return f"{length} stylem motylkowym"
-        case "Breaststroke":
-            return f"{length} stylem klasycznym"
+    distance_split = distance.split(" ")
+    return f"{distance_split[0]} {config['styles'][distance_split[-1]]}"
         
 def translate_date(date):
     date_list = date.split(" ")
-    match date_list[1]:
-        case "Jan":
-            return f"{date_list[0]} Stycznia {date_list[2]}"
-        case "Feb":
-            return f"{date_list[0]} Lutego {date_list[2]}"
-        case "Mar":
-            return f"{date_list[0]} Marca {date_list[2]}"
-        case "Apr":
-            return f"{date_list[0]} Kwietnia {date_list[2]}"
-        case "May":
-            return f"{date_list[0]} Maja {date_list[2]}"
-        case "Jun":
-            return f"{date_list[0]} Czerwca {date_list[2]}"
-        case "Jul":
-            return f"{date_list[0]} Lipca {date_list[2]}"
-        case "Aug":
-            return f"{date_list[0]} Sierpnia {date_list[2]}"
-        case "Sep":
-            return f"{date_list[0]} Wrzesnia {date_list[2]}"
-        case "Oct":
-            return f"{date_list[0]} Pazdziernika {date_list[2]}"
-        case "Nov":
-            return f"{date_list[0]} Listopada {date_list[2]}"
-        case "Dec":
-            return f"{date_list[0]} Grudnia {date_list[2]}"
+    return f"{date_list[0]} {config['months'][date_list[1]]} {date_list[2]}"
 
-    
-clubId = 65773
-year = 2025
-stroke = 8
-courses = ['LCM', 'SCM']
-meetings = {}
-base_url = "https://www.swimrankings.net/index.php"
+clubId = config['clubId']
+stroke = config['stroke']
+courses = config['courses']
+base_url = config['base_url']
 ranking_details = "page=rankingDetail"
+meetings = {}
 regex_class = re.compile(r"^meetResult[0-1]$")
 current_year = datetime.now().year
 athlete_name = ""
 athletes_dict = dict()
 
 for course in courses:
-    url = f"{base_url}?{ranking_details}&clubId={clubId}&stroke={stroke}&year={year}&course={course}"  
+    url = f"{base_url}?{ranking_details}&clubId={clubId}&stroke={stroke}&year={current_year}&course={course}"  
     response = requests.get(url)
     soup = BeautifulSoup(response.text, 'html.parser')
     elements_td = soup.find_all('td', class_='name')
@@ -151,17 +117,13 @@ wb = Workbook()
 ws = wb.active
 last_col_index = (len(meetings) + 1) * 3
 last_col_letter = get_column_letter(last_col_index)
-
-ws.merge_cells(f"A1:{last_col_letter}1")
-ws.merge_cells(f"A2:{last_col_letter}2")
-ws.merge_cells(f"B3:{last_col_letter}3")
+for i in range(1,4):
+    ws.merge_cells(f"A{i}:{last_col_letter}{i}")
 ws["A1"] = f"UCZESTNICTWO W ZAWODACH OBJĘTYCH SYSTEMEM WSPÓŁZAWODNICTWA SPORTOWEGO W {current_year} ROKU"
 ws["A2"] = f"Nazwa klubu: Ks Posnania Poznan"
 ws["A3"] = f"Dyscyplina: PŁYWANIE"
-ws.merge_cells("A4:A7")
-ws.merge_cells("B4:B7")
-ws.merge_cells("C4:C7")
-ws.merge_cells("D4:D7")
+for i in range(1,5):
+    ws.merge_cells(f"{get_column_letter(i)}4:{get_column_letter(i)}7")
 ws["A4"] = "L.p. (*)"
 ws["B4"] = f"Imię i nazwisko zawodnika objętego szkoleniem w {current_year} roku"
 ws["C4"] = "Kategoria wiekowa"
@@ -230,17 +192,11 @@ for col_cells in ws.columns:
     column_letter = get_column_letter(col_cells[0].column)  
     
     for cell in col_cells:
+        if cell.value:
+            cell.alignment = center_alignment
         if cell.row >= 4:
             try:
-                if cell.value:
-                    cell.alignment = center_alignment
-                    max_length = max(max_length, len(str(cell.value)))
-            except:
-                pass
-        else:
-            try:
-                if cell.value:
-                    cell.alignment = center_alignment
+                max_length = max(max_length, len(str(cell.value)))
             except:
                 pass
     

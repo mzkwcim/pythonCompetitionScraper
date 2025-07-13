@@ -1,0 +1,27 @@
+{
+  "styles": {
+    "Freestyle": "stylem dowolnym",
+    "Backstroke": "stylem grzbietowym",
+    "Breaststroke": "stylem klasycznym",
+    "Medley": "stylem zmiennym",
+    "Buterfly": "stylem motylkowym"
+  },
+  "months": {
+    "Jan": "Stycznia",
+    "Feb": "Lutego",
+    "Mar": "Marca",
+    "Apr": "Kwietnia",
+    "May": "Maja",
+    "Jun": "Czerwca",
+    "Jul": "Lipca",
+    "Aug": "Sierpnia",
+    "Sep": "Wrzesnia",
+    "Oct": "Pazdziernika",
+    "Nov": "Listopada",
+    "Dec": "Grudnia"
+  },
+  "clubId": "65773",
+  "stroke": "8",
+  "courses": ["LCM", "SCM"],
+  "base_url": "https://www.swimrankings.net/index.php"
+}
