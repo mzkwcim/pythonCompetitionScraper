@@ -6,6 +6,7 @@ from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Border, Side
+from helper import translate_date, translate_stroke, translate_age_to_category, create_url
 
 with open('config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)
@@ -15,29 +16,6 @@ def col_letter_to_index(col_letter):
     for char in col_letter:
         result = result * 26 + (ord(char.upper()) - ord('A') + 1)
     return result
-
-def translate_age_to_category(age):
-    match age:
-        case _ if age <= 11:
-            return "Dziecko"
-        case _ if age > 11 and age <= 13:
-            return "Mlodzik"
-        case _ if age > 13 and age <= 16:
-            return "Junior Mlodszy"
-        case _ if age > 16 and age <= 18:
-            return "Junior"
-        case _ if age > 18 and age <= 23:
-            return "Mlodzieżowiec"
-        case _ if age > 23:
-            return "Senior"
-        
-def translate_stroke(distance):
-    distance_split = distance.split(" ")
-    return f"{distance_split[0]} {config['styles'][distance_split[-1]]}"
-        
-def translate_date(date):
-    date_list = date.split(" ")
-    return f"{date_list[0]} {config['months'][date_list[1]]} {date_list[2]}"
 
 clubId = config['clubId']
 stroke = config['stroke']
