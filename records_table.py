@@ -26,7 +26,7 @@ class RecordTable:
         self.records["city"].append(city)
         self.records["competition_date"].append(competition_date)
         
-    def ger_records(self):
+    def get_records(self):
         return self.records
     
 class RecordsTablesGroup:
