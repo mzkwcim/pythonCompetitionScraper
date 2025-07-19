@@ -6,17 +6,16 @@ from app.io.serializer import Serializer
 
 class Ranking:
     @staticmethod
-    def populate_records(read_from_json: bool, save: bool = True) -> RecordsTablesGroup:
-        if read_from_json:
-            Serializer.load_records_from_json(records)
-            return records
+    def populate_records(save: bool = True) -> RecordsTablesGroup:
         records = RecordsTablesGroup()
-        for gender in config['genders']:
-            for course in config['courses']:
+        for gender in config['genders'].values():
+            for course in config['courses'].values():
                 for age, group in config['age_groups'].items():
                     Orchestrator.handle_single_table(gender, course, age, group, records)
                     time.sleep(config["pause_time"])
         if save:
             Serializer.save_records_to_json(records)
         return records
+    
+    
             

@@ -13,10 +13,10 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Mikołajczak Helena",
@@ -121,11 +121,13 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym",
+      "1500m stylem dowolnym",
+      "800m stylem dowolnym"
     ],
     "athlete": [
       "Bartoszewska Marta",
@@ -142,7 +144,9 @@
       "Żegalski Aleksandra",
       "Żegalski Aleksandra",
       "Wiśniewska Magdalena",
-      "Wiśniewska Magdalena"
+      "Wiśniewska Magdalena",
+      "Yevsa Yevanhelina",
+      "Yevsa Yevanhelina"
     ],
     "readable_time": [
       "30.19",
@@ -159,7 +163,9 @@
       "1:11.35",
       "2:40.06",
       "2:38.22",
-      "5:40.18"
+      "5:40.18",
+      "23:27.68",
+      "12:28.85"
     ],
     "decimal_time": [
       30,
@@ -176,7 +182,9 @@
       71,
       160,
       158,
-      340
+      340,
+      1408,
+      749
     ],
     "city": [
       "Poznań",
@@ -193,7 +201,9 @@
       "Warsaw",
       "Warsaw",
       "Berlin (GER)",
-      "Oświęcim"
+      "Oświęcim",
+      "21 Czerwca 2025",
+      "21 Czerwca 2025"
     ],
     "competition_date": [
       "20 Maja 2023",
@@ -210,7 +220,9 @@
       "2 Grudnia 2006",
       "1 Grudnia 2006",
       "17 Grudnia 2006",
-      "7 Lipca 2006"
+      "7 Lipca 2006",
+      "Poznań",
+      "Poznań"
     ]
   },
   "Rekordy zawodniczek 14 letnich na basenie 50 metrowym": {
@@ -227,11 +239,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Podlewska Miriam",
@@ -343,11 +355,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Dolata Olga",
@@ -459,11 +471,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Wrzeszczyńska Marta",
@@ -574,10 +586,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym",
+      "1500m stylem dowolnym"
     ],
     "athlete": [
       "Nogaj Alicja",
@@ -594,7 +607,8 @@
       "Kolańczyk Wiktoria",
       "Kolańczyk Wiktoria",
       "Kozanecka Katarzyna",
-      "Wiśniewska Magdalena"
+      "Wiśniewska Magdalena",
+      "Yevsa Yevanhelina"
     ],
     "readable_time": [
       "25.98",
@@ -611,7 +625,8 @@
       "28.28",
       "1:02.76",
       "2:30.55",
-      "5:31.69"
+      "5:31.69",
+      "23:27.68"
     ],
     "decimal_time": [
       26,
@@ -628,7 +643,8 @@
       28,
       63,
       151,
-      332
+      332,
+      1408
     ],
     "city": [
       "Olsztyn",
@@ -645,7 +661,8 @@
       "Oświęcim",
       "Oświęcim",
       "Warsaw",
-      "Drzonków"
+      "Drzonków",
+      "21 Czerwca 2025"
     ],
     "competition_date": [
       "26 Kwietnia 2023",
@@ -662,7 +679,8 @@
       "20 Lipca 2023",
       "19 Lipca 2023",
       "13 Maja 2018",
-      "23 Lipca 2010"
+      "23 Lipca 2010",
+      "Poznań"
     ]
   },
   "Rekordy zawodniczek 18 letnich na basenie 50 metrowym": {
@@ -679,11 +697,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Nogaj Alicja",
@@ -795,10 +813,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
+      "200m stylem motylkowym",
       "200m stylem zmiennym",
-      "200m stylem motylkowym"
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Celmer Wiktoria",
@@ -816,7 +835,8 @@
       "Celmer Wiktoria",
       "Kolańczyk Wiktoria",
       "Kolańczyk Wiktoria",
-      "Cieślak Katarzyna"
+      "Cieślak Katarzyna",
+      "Mendowska Katarzyna"
     ],
     "readable_time": [
       "26.76",
@@ -834,7 +854,8 @@
       "27.68",
       "1:06.34",
       "2:33.39",
-      "2:36.04"
+      "2:36.04",
+      "5:58.45"
     ],
     "decimal_time": [
       27,
@@ -852,7 +873,8 @@
       28,
       66,
       153,
-      156
+      156,
+      358
     ],
     "city": [
       "Lublin",
@@ -870,7 +892,8 @@
       "Lublin",
       "Olsztyn",
       "Olsztyn",
-      "Olsztyn"
+      "Olsztyn",
+      "16 Grudnia 2006"
     ],
     "competition_date": [
       "9 Kwietnia 2022",
@@ -888,7 +911,8 @@
       "9 Kwietnia 2022",
       "12 Kwietnia 2025",
       "12 Kwietnia 2025",
-      "1 Czerwca 2013"
+      "1 Czerwca 2013",
+      "Berlin (GER)"
     ]
   },
   "Rekordy zawodniczek w kategorii open na basenie 50 metrowym": {
@@ -905,11 +929,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Nogaj Alicja",
@@ -1020,12 +1044,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Mikołajczak Helena",
@@ -1136,12 +1160,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Bartoszewska Marta",
@@ -1252,12 +1276,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Celmer Natalia",
@@ -1368,12 +1392,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Wrzeszczyńska Marta",
@@ -1484,12 +1508,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Wrzeszczyńska Marta",
@@ -1600,12 +1624,13 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym",
+      "200m stylem grzbietowym"
     ],
     "athlete": [
       "Nogaj Alicja",
@@ -1624,7 +1649,8 @@
       "Kolańczyk Wiktoria",
       "Kozanecka Katarzyna",
       "Kozanecka Katarzyna",
-      "Kozanecka Katarzyna"
+      "Kozanecka Katarzyna",
+      "Mikołajczak Helena"
     ],
     "readable_time": [
       "25.62",
@@ -1643,7 +1669,8 @@
       "2:17.98",
       "1:07.14",
       "2:27.39",
-      "5:06.47"
+      "5:06.47",
+      "2:36.43"
     ],
     "decimal_time": [
       26,
@@ -1662,7 +1689,8 @@
       138,
       67,
       147,
-      306
+      306,
+      156
     ],
     "city": [
       "Olsztyn",
@@ -1681,7 +1709,8 @@
       "Olsztyn",
       "Lublin",
       "Poznań",
-      "Lublin"
+      "Lublin",
+      "30 Listopada 2024"
     ],
     "competition_date": [
       "15 Grudnia 2023",
@@ -1700,7 +1729,8 @@
       "17 Grudnia 2023",
       "20 Grudnia 2018",
       "25 Listopada 2018",
-      "18 Grudnia 2018"
+      "18 Grudnia 2018",
+      "Poznań"
     ]
   },
   "Rekordy zawodniczek 18 letnich na basenie 25 metrowym": {
@@ -1717,12 +1747,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Celmer Wiktoria",
@@ -1838,12 +1868,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Grzegorczyk Izabella",
@@ -1955,12 +1985,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Celmer Wiktoria",
@@ -2077,10 +2107,10 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
-      "200m stylem motylkowym"
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
+      "200m stylem motylkowym",
+      "200m stylem zmiennym"
     ],
     "athlete": [
       "Grzechowiak Jakub",
@@ -2187,11 +2217,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Jagłowski Dawid",
@@ -2303,11 +2333,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Grzechowiak Jakub",
@@ -2419,11 +2449,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Włoch Jakub",
@@ -2535,11 +2565,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -2651,11 +2681,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -2767,11 +2797,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -2883,11 +2913,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Shvets' Mykhaylo",
@@ -2999,11 +3029,11 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -3115,13 +3145,13 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Grzechowiak Jakub",
@@ -3243,12 +3273,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Grzechowiak Jakub",
@@ -3365,12 +3395,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Jagłowski Dawid",
@@ -3487,12 +3517,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -3609,12 +3639,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -3731,12 +3761,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -3853,12 +3883,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",
@@ -3974,10 +4004,13 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
+      "50m stylem motylkowym",
+      "100m stylem motylkowym",
+      "200m stylem motylkowym",
       "100m stylem zmiennym",
+      "200m stylem grzbietowym",
       "200m stylem zmiennym",
-      "100m stylem motylkowym"
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Shvets' Mykhaylo",
@@ -3994,7 +4027,10 @@
       "Łangowski Maciej",
       "Wnuk Jakub",
       "Wnuk Jakub",
-      "Zalewski Jacek"
+      "Zalewski Jacek",
+      "Jaraszkiewicz Bartosz",
+      "Heymann Patryk",
+      "Wiśniewski Leszek"
     ],
     "readable_time": [
       "23.38",
@@ -4011,7 +4047,10 @@
       "24.97",
       "58.47",
       "2:14.16",
-      "58.40"
+      "58.40",
+      "2:40.53",
+      "2:38.65",
+      "5:45.78"
     ],
     "decimal_time": [
       23,
@@ -4028,7 +4067,10 @@
       25,
       58,
       134,
-      58
+      58,
+      161,
+      159,
+      346
     ],
     "city": [
       "Poznań",
@@ -4045,7 +4087,10 @@
       "Bydgoszcz",
       "Bydgoszcz",
       "Poznań",
-      "Poznań"
+      "Poznań",
+      "14 Listopada 2008",
+      "18 Listopada 2022",
+      "9 Listopada 2024"
     ],
     "competition_date": [
       "16 Marca 2024",
@@ -4062,7 +4107,10 @@
       "3 Grudnia 2021",
       "1 Grudnia 2021",
       "13 Listopada 2021",
-      "1 Marca 2025"
+      "1 Marca 2025",
+      "Śrem",
+      "Poznań",
+      "Poznań"
     ]
   },
   "Rekordy zawodników w kategorii open na basenie 25 metrowym": {
@@ -4079,12 +4127,12 @@
       "50m stylem klasycznym",
       "100m stylem klasycznym",
       "200m stylem klasycznym",
-      "50m stylem zmiennym",
-      "100m stylem zmiennym",
-      "200m stylem zmiennym",
+      "50m stylem motylkowym",
       "100m stylem motylkowym",
       "200m stylem motylkowym",
-      "400m stylem motylkowym"
+      "100m stylem zmiennym",
+      "200m stylem zmiennym",
+      "400m stylem zmiennym"
     ],
     "athlete": [
       "Krucki Kajetan",

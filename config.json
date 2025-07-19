@@ -3,8 +3,8 @@
     "dowolny": "stylem dowolnym",
     "grzbietowy": "stylem grzbietowym",
     "klasyczny": "stylem klasycznym",
-    "motylkowy": "stylem zmiennym",
-    "zmienny": "stylem motylkowym"
+    "motylkowy": "stylem motylkowym",
+    "zmienny": "stylem zmiennym"
   },
   "months": {
     "Sty": "Stycznia",
@@ -33,8 +33,14 @@
   },
   "clubId": "65773",
   "stroke": "8",
-  "courses": ["LCM", "SCM"],
-  "genders": ["2", "1"],
+  "courses": {
+    "basenie 25 metrowym": "LCM",
+    "basenie 50 metrowym": "SCM"
+  },
+  "genders": {
+    "zawodniczek": "2",
+    "zawodników": "1"
+  },
   "base_url": "https://www.swimrankings.net/index.php",
   "pause_time": 5
 }
