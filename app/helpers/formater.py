@@ -17,9 +17,9 @@ class Formater:
 
     @staticmethod
     def format_city(city_element: bs4) -> str:
-        return str(city_element.find('a').decode_contents())
+        return str(city_element.find('a').decode_contents()).replace('\xa0', ' ')
 
     @staticmethod
     def format_decimal_time(string_time: str) -> float:
         splited_time = string_time.split(":")
-        return float((int(splited_time[0])*60) + float(splited_time[1])) if len(splited_time) > 1 else float(splited_time[0])
+        return round(float((int(splited_time[0])*60) + float(splited_time[1]))) if len(splited_time) > 1 else round(float(splited_time[0]))

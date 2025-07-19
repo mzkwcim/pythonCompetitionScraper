@@ -13,10 +13,6 @@ class Orchestrator:
         soup = Fetcher.fetch_soup(url)
         data = Parser.parse_table_data(soup)
 
-        if not Utils.check_site_correctness(data["dates"], data["yobs"], age):
-            print(f"skipuję {url} nieprawidłowa data urodzenia")
-            return
-
         for i, _ in enumerate(data["events"]):
             Parser.process_event(i, data, record)
         print(record.get_records())

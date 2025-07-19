@@ -1,9 +1,5 @@
 import requests
-import json
 from bs4 import BeautifulSoup
-import re
-from datetime import datetime
-import time
 base_url = "https://www.swimrankings.net/index.php"
 url = f"{base_url}?page=rankingDetail&clubId=65773&gender=1&season=2025&agegroup=0&stroke=9"  
 response = requests.get(url)

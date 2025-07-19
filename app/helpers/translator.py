@@ -1,4 +1,4 @@
-from config_loader import config
+from app.loader.config_loader import config
 from app.helpers.formater import Formater
 import bs4
 

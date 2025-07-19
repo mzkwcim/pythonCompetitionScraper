@@ -1,4 +1,4 @@
-from config_loader import config
+from app.loader.config_loader import config
 
 class Utils:
     @staticmethod
@@ -11,5 +11,5 @@ class Utils:
 
     @staticmethod
     def create_url(gender: str, course: str, age: str) -> str:
-        return f"{config['base_url']}?page=rankingDetail&clubId={config['clubId']}&gender={gender}&course={course}&agegroup={age}&season=-1"
+        return f"{config['base_url']}?page=rankingDetail&clubId={config['clubId']}&gender={gender}&course={course}&agegroup={age}&season=-1&language=pl"
     
