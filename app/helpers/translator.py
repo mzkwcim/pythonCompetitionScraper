@@ -1,5 +1,5 @@
 from config_loader import config
-from helpers.formater import Formater
+from app.helpers.formater import Formater
 import bs4
 
 class Translator:

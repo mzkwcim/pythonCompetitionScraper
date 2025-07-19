@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
-from records_table import RecordTable
-from helpers.translator import Translator
-from helpers.formater import Formater
+from app.records.records_table import RecordTable
+from app.helpers.translator import Translator
+from app.helpers.formater import Formater
 
 class Parser:
     @staticmethod

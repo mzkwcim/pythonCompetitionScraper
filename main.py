@@ -6,7 +6,7 @@ from datetime import datetime
 from openpyxl import Workbook
 from openpyxl.utils import get_column_letter
 from openpyxl.styles import Alignment, Border, Side
-from helper import translate_date, translate_stroke, translate_age_to_category, create_url
+from app.helpers.translator import Translator
 
 with open('config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)
@@ -46,7 +46,7 @@ for course in courses:
 
             meetings[meeting_name] = {
                 "city": meeting_city,
-                "date": translate_date(meeting_date)
+                "date": Translator.translate_date(meeting_date)
             }
 
             meeting_elements = meeting_soup.find_all('tr', class_=regex_class)
@@ -56,7 +56,7 @@ for course in courses:
                     athlete_element = meeting_element.find('td', class_='nameImportant')
                     if athlete_element:
                         athlete_name = str(athlete_element.find('a').decode_contents()).replace(",", "").title()
-                        athlete_birth = translate_age_to_category(int(current_year) - int(athlete_element.decode_contents().split(" - ")[-1].strip()))
+                        athlete_birth = Translator.translate_age_to_category(int(current_year) - int(athlete_element.decode_contents().split(" - ")[-1].strip()))
                         meetings[meeting_name][athlete_name] = {
                             "age": athlete_birth,
                             "numberOfStarts": 0
@@ -72,7 +72,7 @@ for course in courses:
                         place = place_element.replace(".", "")
                         if "swimmingEvents" not in meetings[meeting_name][athlete_name]:
                             meetings[meeting_name][athlete_name]["swimmingEvents"] = {}
-                        meetings[meeting_name][athlete_name]["swimmingEvents"][translate_stroke(distance_element)] = place
+                        meetings[meeting_name][athlete_name]["swimmingEvents"][Translator.translate_stroke(distance_element)] = place
                         meetings[meeting_name][athlete_name]["numberOfStarts"] += 1
 
 most_events_per_athlete = {}

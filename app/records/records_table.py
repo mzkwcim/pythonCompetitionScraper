@@ -41,3 +41,6 @@ class RecordsTablesGroup:
     
     def get_all_tables(self):
         return self.tables.values()
+    
+    def add_existing_table(self, table: RecordTable):
+        self.tables[table.name] = table

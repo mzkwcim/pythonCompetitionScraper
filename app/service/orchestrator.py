@@ -1,7 +1,7 @@
-from records_table import RecordsTablesGroup
-from scraping.parser import Parser
-from scraping.fetch import Fetcher
-from helpers.utils import Utils
+from app.records.records_table import RecordsTablesGroup
+from app.scraping.parser import Parser
+from app.scraping.fetch import Fetcher
+from app.helpers.utils import Utils
 
 class Orchestrator:
     @staticmethod
