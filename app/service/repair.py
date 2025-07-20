@@ -17,6 +17,6 @@ class Repair:
 
                     missing_elements = set(previous_events) - set(current_events)
                     for missing_event in missing_elements:
-                        index = previous_table.get_index_of_event(missing_event)
-                        record = previous_table.get_record(index)
-                        current_table.add_record(*record)
+                        record = previous_table.get_record(missing_event)
+                        current_table.add_record(record)
+                        

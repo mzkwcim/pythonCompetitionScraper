@@ -37,6 +37,26 @@
     "basenie 25 metrowym": "LCM",
     "basenie 50 metrowym": "SCM"
   },
+  "event_order": [
+    "50m stylem dowolnym",
+    "100m stylem dowolnym",
+    "200m stylem dowolnym",
+    "400m stylem dowolnym",
+    "800m stylem dowolnym",
+    "1500m stylem dowolnym",
+    "50m stylem grzbietowym",
+    "100m stylem grzbietowym",
+    "200m stylem grzbietowym",
+    "50m stylem klasycznym",
+    "100m stylem klasycznym",
+    "200m stylem klasycznym",
+    "50m stylem motylkowym",
+    "100m stylem motylkowym",
+    "200m stylem motylkowym",
+    "100m stylem zmiennym",
+    "200m stylem zmiennym",
+    "400m stylem zmiennym"
+  ],
   "genders": {
     "zawodniczek": "2",
     "zawodników": "1"

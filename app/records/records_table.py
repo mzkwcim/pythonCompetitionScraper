@@ -1,5 +1,5 @@
 class RecordTable:
-    def __init__(self, name: str):
+    def __init__(self, name: str) -> None:
         self.name = name
         self.records = {
             "event": [],
@@ -26,16 +26,34 @@ class RecordTable:
         self.records["city"].append(city)
         self.records["competition_date"].append(competition_date)
         
+    def update_record(
+        self, 
+        event: str, 
+        athlete_name: str, 
+        readable_time: str, 
+        decimal_time: float, 
+        competition_date: str, 
+        city: str
+    ) -> None:
+        index = self._get_index_of_event(event)
+        self.records["event"][index] = event
+        self.records["athlete"][index] = athlete_name
+        self.records["readable_time"][index] = readable_time
+        self.records["decimal_time"][index] = decimal_time
+        self.records["city"][index] = city
+        self.records["competition_date"][index] = competition_date
+        
     def get_events(self) -> list[str]:
         return self.records["event"]
     
     def get_decimal_records(self) -> list[float]:
         return self.records["decimal_time"]
         
-    def get_records(self):
+    def get_records(self) -> dict[str, list]:
         return self.records
     
-    def get_record(self, index: int) -> tuple[str, str, str, float, str, str]:
+    def get_record(self, event: str) -> tuple[str, str, str, float, str, str]:
+        index = self._get_index_of_event(event)
         return (
             self.records["event"][index],
             self.records["athlete"][index],
@@ -45,14 +63,14 @@ class RecordTable:
             self.records["competition_date"][index]
         )
     
-    def get_index_of_event(self, event: str):
+    def _get_index_of_event(self, event: str) -> int:
         return self.records["event"].index(event)
     
 class RecordsTablesGroup:
-    def __init__(self):
+    def __init__(self) -> None:
         self.tables = {}
         
-    def add_table(self, name: str):
+    def add_table(self, name: str) -> None:
         self.tables[name] = RecordTable(name)
         
     def get_table(self, name: str) -> RecordTable:
@@ -61,10 +79,10 @@ class RecordsTablesGroup:
     def get_all_tables_names(self) -> list[str]:
         return list(self.tables.keys())
     
-    def get_all_tables(self):
+    def get_all_tables(self)-> list[RecordTable]:
         return self.tables.values()
     
-    def add_existing_table(self, table: RecordTable):
+    def add_existing_table(self, table: RecordTable) -> None:
         self.tables[table.name] = table
         
     def group_records(self, gender: str, course: str) -> list[str]:
