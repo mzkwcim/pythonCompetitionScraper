@@ -4,6 +4,7 @@ from app.ranking.ranking import Ranking
 from app.io.serializer import Serializer
 from app.loader.config_loader import config
 from app.service.repair import Repair
+from app.records.records_table import Strokes, Distance
 import time
 
 app = Flask(__name__)
@@ -18,6 +19,9 @@ for course in config["courses"].keys():
         grouped_names = records.group_records(gender, course)
 
         previous_table = records.get_table(grouped_names[0])
+        print(previous_table.get_records_per_style(Strokes.DOWOLNYM))
+        print(previous_table.get_records_per_distance(Distance.M_100))
+        time.sleep(19)
         previous_events = previous_table.get_events()
         previous_times = previous_table.get_decimal_records()
 
@@ -26,7 +30,7 @@ for course in config["courses"].keys():
             current_events = current_table.get_events()
             current_times = current_table.get_decimal_records()
             for index, _ in enumerate(previous_events):
-                print(f"Previous event and time {previous_events[index]} {previous_times[index]} {previous_table[index]}")
-                print(f"Current event and time {current_events[index]} {current_times[index]} {current_table[index]}")
+                print(f"Previous event and time {previous_events[index]} {previous_times[index]} {previous_table.get_records()}")
+                print(f"Current event and time {current_events[index]} {current_times[index]} {current_table.get_records()}")
                 time.sleep(10)
             

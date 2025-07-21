@@ -1,3 +1,20 @@
+from enum import Enum
+
+class Strokes(Enum):
+    MOTYLKOWYM = "motylkowym"
+    GRZBIETOWYM = "grzbietowym"
+    KLASYCZNYM = "klasycnzym"
+    DOWOLNYM = "dowolnym"
+    ZMIENNYM = "zmiennym"
+    
+class Distance(Enum):
+    M_50 = "50m"
+    M_100 = "100m"
+    M_200 = "200m"
+    M_400 = "400m"
+    M_800 = "800m"
+    M_1500 = "1500m"
+
 class RecordTable:
     def __init__(self, name: str) -> None:
         self.name = name
@@ -43,6 +60,12 @@ class RecordTable:
         self.records["city"][index] = city
         self.records["competition_date"][index] = competition_date
         
+    def get_records_per_style(self, stroke: Strokes):
+        return [name for name in self.records["event"] if stroke.value in name]
+    
+    def get_records_per_distance(self, distance: Distance):
+        return [name for name in self.records["event"] if distance.value in name]
+        
     def get_events(self) -> list[str]:
         return self.records["event"]
     
@@ -65,7 +88,7 @@ class RecordTable:
     
     def _get_index_of_event(self, event: str) -> int:
         return self.records["event"].index(event)
-    
+        
 class RecordsTablesGroup:
     def __init__(self) -> None:
         self.tables = {}
