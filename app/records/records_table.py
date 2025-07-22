@@ -77,6 +77,8 @@ class RecordTable:
     
     def get_record(self, event: str) -> tuple[str, str, str, float, str, str]:
         index = self._get_index_of_event(event)
+        if index == None:
+            return None
         return (
             self.records["event"][index],
             self.records["athlete"][index],
@@ -86,8 +88,12 @@ class RecordTable:
             self.records["competition_date"][index]
         )
     
-    def _get_index_of_event(self, event: str) -> int:
-        return self.records["event"].index(event)
+    def _get_index_of_event(self, event: str) -> int | None:
+        try:
+            return self.records["event"].index(event)
+        except ValueError:
+            print(f"Event '{event}' not found in records['event'] list.")
+            return None
         
 class RecordsTablesGroup:
     def __init__(self) -> None:
