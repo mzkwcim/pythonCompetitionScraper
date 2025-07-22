@@ -21,7 +21,6 @@ for course in config["courses"].keys():
         previous_table = records.get_table(grouped_names[0])
         print(previous_table.get_records_per_style(Strokes.DOWOLNYM))
         print(previous_table.get_records_per_distance(Distance.M_100))
-        time.sleep(19)
         previous_events = previous_table.get_events()
         previous_times = previous_table.get_decimal_records()
 
@@ -30,7 +29,16 @@ for course in config["courses"].keys():
             current_events = current_table.get_events()
             current_times = current_table.get_decimal_records()
             for index, _ in enumerate(previous_events):
-                print(f"Previous event and time {previous_events[index]} {previous_times[index]} {previous_table.get_records()}")
-                print(f"Current event and time {current_events[index]} {current_times[index]} {current_table.get_records()}")
-                time.sleep(10)
+                previous_event = previous_events[index]
+                current_event = previous_table.get_record(previous_event)[0]
+                previous_time = previous_times[index]
+                current_time = current_times[index]
+                if previous_time < current_time:
+                    event, athlete, readale_time, decimal_time, city, competition_date = previous_table.get_record(previous_event)
+                    c_event, c_athlete, c_readable_time, c_decimal_time, c_city, c_competition_date = current_table.get_record(previous_event)
+                    print(f"Younger athlete {athlete} had better time than older athlete {c_athlete} on {c_event}, time comparison:\n older: {c_readable_time}\n younger {readale_time}")
+                    # current_table.update_record(event, athlete, readale_time, decimal_time, city, competition_date)
+                previous_table = current_table
+            
+                
             

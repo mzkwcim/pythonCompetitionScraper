@@ -49,8 +49,8 @@ class RecordTable:
         athlete_name: str, 
         readable_time: str, 
         decimal_time: float, 
+        city: str,
         competition_date: str, 
-        city: str
     ) -> None:
         index = self._get_index_of_event(event)
         self.records["event"][index] = event
