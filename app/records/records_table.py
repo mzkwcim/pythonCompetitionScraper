@@ -27,6 +27,12 @@ class RecordTable:
             "competition_date": []
         }
         
+    def __repr__(self) -> str:
+        return f"SwimRecords(name='{self.name}', num_records={len(self.records['event'])})"
+    
+    def __str__(self):
+        return f"Zestaw rekordów: {self.name}\nLiczba rekordów: {len(self.records['event'])}"
+        
     def add_record(
         self, 
         event: str, 
@@ -116,3 +122,22 @@ class RecordsTablesGroup:
         
     def group_records(self, gender: str, course: str) -> list[str]:
         return [name for name in self.tables if gender in name and course in name]
+    
+    def __repr__(self) -> str:
+        table_names = list(self.tables.keys())
+        return f"RecordsTablesGroup(num_tables={len(table_names)}, tables={table_names})"
+
+    def __str__(self) -> str:
+        table_names = list(self.tables.keys())
+        if not table_names:
+            return "Grupa tabel rekordów jest pusta."
+        return (f"Grupa tabel rekordów zawiera {len(table_names)} tabel:\n"
+                f"  - {', '.join(table_names)}")
+        
+    def __len__(self) -> int:
+        return len(self.tables)
+    
+    def __getitem__(self, name: str) -> RecordTable:
+        if name not in self.tables:
+            raise KeyError(f"Tabela '{name}' nie istnieje.")
+        return self.tables[name]
